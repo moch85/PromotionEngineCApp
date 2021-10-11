@@ -1,0 +1,6 @@
+C:\Users\monic\source\repos\PromotionEngineCApp\PromotionEngineCApp_Test\bin\Debug\net5.0\CoverletSourceRootsMapping
+C:\Users\monic\source\repos\PromotionEngineCApp\PromotionEngineCApp_Test\obj\Debug\net5.0\PromotionEngineCApp_Test.csproj.AssemblyReference.cache
+C:\Users\monic\source\repos\PromotionEngineCApp\PromotionEngineCApp_Test\obj\Debug\net5.0\PromotionEngineCApp_Test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\monic\source\repos\PromotionEngineCApp\PromotionEngineCApp_Test\obj\Debug\net5.0\PromotionEngineCApp_Test.AssemblyInfoInputs.cache
+C:\Users\monic\source\repos\PromotionEngineCApp\PromotionEngineCApp_Test\obj\Debug\net5.0\PromotionEngineCApp_Test.AssemblyInfo.cs
+C:\Users\monic\source\repos\PromotionEngineCApp\PromotionEngineCApp_Test\obj\Debug\net5.0\PromotionEngineCApp_Test.csproj.CoreCompileInputs.cache

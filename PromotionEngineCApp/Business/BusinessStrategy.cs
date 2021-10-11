@@ -8,7 +8,7 @@ using PromotionEngineCApp.Business;
 
 namespace PromotionEngineCApp.Business
 {
-    class BusinessStrategy
+    public class BusinessStrategy
     {
         public AppliedOffer ApplyPromotion(List<ProductCheckout> checkoutList, List<Promotion> promotions)
         {
