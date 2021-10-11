@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Configuration.Json;
 using PromotionEngineCApp;
 using PromotionEngineCApp.Interface;
 
@@ -40,7 +41,7 @@ public class ConfigData : IConfigData
         foreach (var item in configuration.GetSection(Constants.Products).GetChildren())
         {
             Product product = new Product();
-          //  object p = configuration.GetSection(item.Path).Bind(product);
+            configuration.GetSection(item.Path).Bind(product);
             productList.Add(product);
         }
 

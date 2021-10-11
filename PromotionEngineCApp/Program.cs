@@ -1,64 +1,66 @@
 ﻿using System;
 using System.Collections.Generic;
+using PromotionEngineCApp.Interface;
+using PromotionEngineCApp.Business;
 
 namespace PromotionEngineCApp
 {
     class Program
     {
+        
+        
         static void Main(string[] args)
         {
-            List<Product> products = new List<Product>();
+            IPromotionInputOutput consoleLayer = new ConsoleLayout();
+            BusinessStrategy promotion = new BusinessStrategy();
+            List<ProductCheckout> checkoutList = new List<ProductCheckout>();
+            AppliedOffer appliedOffer = new AppliedOffer();
 
-            ConsoleLayout.WriteLine("total number of order");
-            int a = Convert.ToInt32(ConsoleLayout.ReadLine());
-            for (int i = 0; i < a; i++)
+            IConfigData configManagement = new ConfigData(); ;
+
+            try
             {
-                ConsoleLayout.WriteLine("enter the type of product:A,B,C or D");
-                string type = ConsoleLayout.ReadLine();
-                Product p = new Product();
-                products.Add(p);
-            }
+                LogFile.LogWrite("Promotion Engine is initialized : ");
 
-            int totalPrice = GetTotalPrice(products);
-            ConsoleLayout.WriteLine(totalPrice);
-            ConsoleLayout.ReadLine();
+
+                try
+                {
+                    checkoutList = consoleLayer.LoadUserInput();
+                }
+                catch (Exception ex)
+                {
+                    LogFile.LogWrite("Error in Checking out Products :" + ex.Message);
+                }
+
+                try
+                {
+                    appliedOffer = promotion.ApplyPromotion(checkoutList, configManagement.GetProductOffers()); ;
+                }
+                catch (Exception ex)
+                {
+                    LogFile.LogWrite("Error in  Applying Promotio :" + ex.Message);
+                }
+
+                try
+                {
+                    if (appliedOffer.Checkouts != null)
+                    {
+                        consoleLayer.DisplayTotalPrice(appliedOffer);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    LogFile.LogWrite("Error in  Displaying TotalPrice:" + ex.Message);
+                }
+
+                Console.ReadLine();
+            }
+            catch (Exception ex)
+            {
+                LogFile.LogWrite("Exception in Promotion Engine .... : " + ex.Message);
+            }
         }
 
-        private static int GetTotalPrice(List<Product> products)
-        {
-            int counterofA = 0;
-            int priceofA = 50;
-            int counterofB = 0;
-            int priceofB = 30;
-            int CounterofC = 0;
-            int priceofC = 20;
-            int CounterofD = 0;
-            int priceofD = 15;
-            foreach (Product pr in products)
-            {
-                if (pr.ProductCode == "A" || pr.ProductName == "a")
-                {
-                    counterofA = counterofA + 1;
-                }
-                if (pr.ProductCode == "B" || pr.ProductName == "b")
-                {
-                    counterofB = counterofB + 1;
-                }
-                if (pr.ProductCode == "C" || pr.ProductName == "c")
-                {
-                    CounterofC = CounterofC + 1;
-                }
-                if (pr.ProductCode == "D" || pr.ProductName == "d")
-                {
-                    CounterofD = CounterofD + 1;
-                }
-            }
-            int totalPriceofA = (counterofA / 3) * 130 + (counterofA % 3 * priceofA);
-            int totalPriceofB = (counterofB / 2) * 45 + (counterofB % 2 * priceofB);
-            int totalPriceofC = (CounterofC * priceofC);
-            int totalPriceofD = (CounterofD * priceofD);
-            return totalPriceofA + totalPriceofB + totalPriceofC + totalPriceofD;
-
-        }
+       
     }
 }

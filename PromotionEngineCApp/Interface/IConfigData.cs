@@ -7,7 +7,7 @@ namespace PromotionEngineCApp.Interface
     {
         List<Product> GetAvilableProducts();
 
-       // List<Promotion> GetProductOffers();
+        List<Promotion> GetProductOffers();
     }
 }
 

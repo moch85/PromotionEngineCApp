@@ -72,7 +72,7 @@ namespace PromotionEngineCApp
             Console.WriteLine("");
             foreach (var item in appliedOffer.Checkouts)
             {
-                Console.WriteLine(item.ProductCode + "-" + item.Quantity + "-" + item.FinalPrice + "-" + item.HasOffer);
+                Console.WriteLine(item.ProductCode + " - " + item.Quantity + " - " + item.FinalPrice);
             }
             Console.WriteLine("Total Price: " + appliedOffer.TotalPrice);
             return true;

@@ -18,6 +18,6 @@ namespace PromotionEngineCApp
     public class PromotionTypeConstants
     {
         public const string Single = "Single";
-        public const string Combo = "Combo";
+        public const string Combo = "TwoForOne";
     }
 }

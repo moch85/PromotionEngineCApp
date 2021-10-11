@@ -1,0 +1,100 @@
+
+Log Entry : 23:22:07 11 October 2021
+  :
+  :Promotion Engine is initialized : 
+-------------------------------
+
+Log Entry : 23:24:21 11 October 2021
+  :
+  :Error in Checking out Products :Object reference not set to an instance of an object.
+-------------------------------
+
+Log Entry : 23:24:26 11 October 2021
+  :
+  :Error in Config file Loading :The configuration file 'DataSource.json' was not found and is not optional. The physical path is 'C:\Users\monic\source\repos\PromotionEngineCApp\PromotionEngineCApp\bin\Debug\net5.0\DataSource.json'.
+-------------------------------
+
+Log Entry : 23:24:27 11 October 2021
+  :
+  :Error in Getting Product Offers :Object reference not set to an instance of an object.
+-------------------------------
+
+Log Entry : 23:24:29 11 October 2021
+  :
+  :Error in  Applying Promotio :Object reference not set to an instance of an object.
+-------------------------------
+
+Log Entry : 23:24:31 11 October 2021
+  :
+  :Error in  Displaying TotalPrice:Object reference not set to an instance of an object.
+-------------------------------
+
+Log Entry : 23:26:59 11 October 2021
+  :
+  :Promotion Engine is initialized : 
+-------------------------------
+
+Log Entry : 23:28:35 11 October 2021
+  :
+  :Promotion Engine is initialized : 
+-------------------------------
+
+Log Entry : 23:28:58 11 October 2021
+  :
+  :Error in Checking out Products :Object reference not set to an instance of an object.
+-------------------------------
+
+Log Entry : 23:33:13 11 October 2021
+  :
+  :Promotion Engine is initialized : 
+-------------------------------
+
+Log Entry : 23:33:21 11 October 2021
+  :
+  :Error in Checking out Products :Object reference not set to an instance of an object.
+-------------------------------
+
+Log Entry : 23:33:37 11 October 2021
+  :
+  :Error in  Applying Promotio :Object reference not set to an instance of an object.
+-------------------------------
+
+Log Entry : 23:38:34 11 October 2021
+  :
+  :Promotion Engine is initialized : 
+-------------------------------
+
+Log Entry : 23:56:23 11 October 2021
+  :
+  :Promotion Engine is initialized : 
+-------------------------------
+
+Log Entry : 00:01:48 12 October 2021
+  :
+  :Promotion Engine is initialized : 
+-------------------------------
+
+Log Entry : 00:10:21 12 October 2021
+  :
+  :Promotion Engine is initialized : 
+-------------------------------
+
+Log Entry : 00:15:51 12 October 2021
+  :
+  :Promotion Engine is initialized : 
+-------------------------------
+
+Log Entry : 00:17:39 12 October 2021
+  :
+  :Promotion Engine is initialized : 
+-------------------------------
+
+Log Entry : 00:18:01 12 October 2021
+  :
+  :Promotion Engine is initialized : 
+-------------------------------
+
+Log Entry : 00:18:20 12 October 2021
+  :
+  :Promotion Engine is initialized : 
+-------------------------------
